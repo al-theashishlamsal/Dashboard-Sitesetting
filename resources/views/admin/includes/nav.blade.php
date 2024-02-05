@@ -76,17 +76,20 @@
                 <i class="fas fa-expand-arrows-alt"></i>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#"
-                role="button">
-                <i class="fas fa-th-large"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('admin.index') }}"
-                role="button">
-                <i class="fa fa-power-off" aria-hidden="true"></i>
-            </a>
-        </li>
+        <!-- ... (your existing code) ... -->
+
+<li class="nav-item dropdown">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="fas fa-cogs"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a href="{{ route('profile.edit') }}" class="dropdown-item">Profile</a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit" class="dropdown-item">Logout</button>
+        </form>
+    </div>
+</li>
+
     </ul>
 </nav>

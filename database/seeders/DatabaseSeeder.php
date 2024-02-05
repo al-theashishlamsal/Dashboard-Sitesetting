@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call(SiteSettingSeeder::class);
         $this->call(AboutSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }

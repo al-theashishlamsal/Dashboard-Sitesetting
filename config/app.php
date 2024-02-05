@@ -104,7 +104,7 @@ return [
     |
     | This locale will be used by the Faker PHP library when generating fake
     | data for your database seeds. For example, this will be used to get
-    | localized telephone numbers, street address information and more.
+    | localized telephone numbers, street address information, and more.
     |
     */
 
@@ -116,7 +116,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This key is used by the Illuminate encrypter service and should be set
-    | to a random, 32 character string, otherwise these encrypted strings
+    | to a random, 32-character string; otherwise, these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
     */
@@ -181,6 +181,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
+
+
+
 
         /*
          * Package Service Providers...
@@ -195,6 +199,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+
+
+
     ],
 
     /*
@@ -208,8 +216,18 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
-    ])->toArray(),
+    'aliases' => [
+
+        // ... Other aliases
+
+        // 'Image' => Intervention\Image\Facades\Image::class
+
+        // ... Other aliases
+
+    ],
+
+
+
+    // ... Other configuration settings
 
 ];

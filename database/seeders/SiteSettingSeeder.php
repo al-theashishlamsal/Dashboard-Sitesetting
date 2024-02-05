@@ -26,9 +26,7 @@ class SiteSettingSeeder extends Seeder
             "slogan" => "Lorem this is some random slogan that I want to be displayed",
             'main_logo' => 'mainlogo.jpg',
             'side_logo' => 'sidelogo.jpg',
-            'facebook_link' => 'https://www.facebook.com/',
-            'instagram_link' => 'https://www.instagram.com/',
-            'social_link' => 'https://www.social.com/',
+
         ]);
     }
 }

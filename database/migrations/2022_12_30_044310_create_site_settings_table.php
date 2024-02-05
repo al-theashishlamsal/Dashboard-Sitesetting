@@ -25,9 +25,6 @@ return new class extends Migration
             $table->longText('slogan');
             $table->string('main_logo');
             $table->string('side_logo')->nullable();
-            $table->string('facebook_link')->nullable();
-            $table->string('instagram_link')->nullable();
-            $table->string('social_link')->nullable();
             $table->timestamps();
         });
     }
